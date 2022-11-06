@@ -11,6 +11,8 @@ body {
     margin: 10px;
     font-size: 30px;
     
+    
+
     text-align: center;
     text-decoration: none;
     color: black;
@@ -27,13 +29,19 @@ body {
 }
 
 
+
 .links {
-    padding: 30px;
+    /*padding: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px 0px;
     background-color: #c6c7c5;
     width: 200px;
-    margin: 20px;
+    margin: 20px;*/
+    
+    position: absolute;
+    margin: 10px;
+    opacity: 0;
+    left: -100px;
 }
 
 .title {
@@ -59,13 +67,16 @@ body {
 }
 
 .profile_picture img {
-    display: inline;
+    display: block;
     margin: 0px 0px 0px -3px;
     height:100%;
     width: auto;
+    position: relative;
+    
 }
 
 .profile_picture {
+    position: relative;
     margin: 30px;
     border-radius: 50%;
     width: 100px;
@@ -82,3 +93,15 @@ body {
     width: 300px;
     height: 300px;
 }
+
+
+.profile_picture:hover .links {
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 1px;
+    opacity: 1;
+    left: 0px;
+    transition: 0.9s ease ;
+    
+}
+
