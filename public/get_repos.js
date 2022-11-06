@@ -53,7 +53,7 @@ function getRepos (maxDisplayedRepos) {
     if (repos.length > 0){
       $(repos).each(function (repo) {
         $( repoListClass ).append(
-            $('<li><a href = "https://github.com/MassimoSandre/' + repos[repo].name + '" "class = "project">' + repos[repo].name + ' </a></li>')
+            $('<li><a href = "https://github.com/MassimoSandre/' + repos[repo].name + '" "class = "project">' + repos[repo].name + ' <div class=\'underline\'></div></a></li>')
         );
       });
     }else{
