@@ -1,95 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCK1YK4YB2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <head>
+        <!-- ROBOTO MONO FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <!-- ================ -->
 
-        gtag('config', 'G-PCK1YK4YB2');
-    </script>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
-    <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
-    <script src = "get_repos.js"></script>
-    <script src = "get_video.js"></script>
+        <link rel="stylesheet" href="stylesheets/main.css">
 
-    <meta charset="UTF-8">
-    <meta name="description" content="Massimo Sandretti">
-    <meta name="author" content="Massimo Sandretti">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Massimo Sandretti</title>
-</head>
-<body>
-    <table id="header">
-        <tr>
-            <td>
-                <div class="profile_picture">
-                    <img src="resources/profile_picture.png"/>
-                    <div class="links">                       
-                        <a href="mailto:massimo@sandretti.it" class="fa fa-envelope-o"></a>
-                        <a href="https://www.youtube.com/channel/UCJLOGjgsLdxPoOp4CPcIAUA" class="fa fa-youtube-play"></a>
-                        <a href="https://github.com/MassimoSandre" class="fa fa-github-square"></a>
-                        <a href="https://www.linkedin.com/in/massimo-albino-sandretti" class="fa fa-linkedin"></a>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <p class="title">Massimo Albino Sandretti</p>
-                <p class="subtitle">Engineering and computer science student</p>
-            </td>
-            
-        </tr>
-    </table>
-    
-    <div id="content">
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <p class="card-title">Check out some of my Github repositories!</p>
-                </div>
-                <div class="card-back">
-                    <ul class="repo_list">
-                        <p>Fetching Repositories...</p>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <p class="card-title">Check out my latest YouTube video</p>
-                </div>
-                <div class="card-back">
-                    <iframe id="youtube_video">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                    </iframe>
-                </div>
-            </div>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Massimo Albino Sandretti's website">
+        <meta name="author" content="Massimo Albino Sandretti">
+        <title>Massimo Sandretti</title>
+    </head>
+    <body>
+        <div class="header">
+            <table>
+                <tr>
+                    <td>
+                        <p class="title title_1">Massimo</p>
+                    </td>
+                    <td>
+                        <div class="icons">
+                            <a style='font-size: 40px;' href="mailto:massimo@sandretti.it" class="fa fa-envelope-o"></a>
+                            <a style='font-size: 40px;' href="https://www.youtube.com/channel/UCJLOGjgsLdxPoOp4CPcIAUA" class="fa fa-youtube-play"></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="subtitle_cell">
+                        <p class="subtitle"> Engineering and</p>
+                        <p class="subtitle"> Computer Science</p>
+                        <p class="subtitle"> student</p>
+                    </td>
+                    <td>
+                        <p class="title title_2">Albino</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="title title_3"> Sandretti </p>
+                    </td>
+                    <td>
+                        <div class="icons">
+                            <a style='font-size: 40px;' href="https://github.com/MassimoSandre" class="fa fa-github-square"></a>
+                            <a style='font-size: 40px;' href="https://www.linkedin.com/in/massimo-albino-sandretti" class="fa fa-linkedin"></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front"> 
-                    <p class="card-title">View my coding activity for the past week</p>
-                </div>
-                <div class="card-back">
-                    <figure><embed src="https://wakatime.com/share/@5a8a1d09-5390-4d2a-93e0-11e765df28c1/6e2b7e87-7f5b-46b0-9d37-c0fd820bcf4a.svg"></embed></figure>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</body>
+        
+    </body>
 </html>
