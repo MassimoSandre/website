@@ -32,7 +32,7 @@ body {
 }
 
 .title {
-    font-size: 140px;
+    font-size: /*140px*/10vw;
     font-weight: 200;
 
     color: var(--main-bg-color);
@@ -43,7 +43,7 @@ body {
 
 .subtitle {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 3.6vw;
     /* width: 50%; */
     
 }
@@ -61,19 +61,17 @@ body {
     
   }
 .fa {
-    padding: 10px;
-    margin: 20px;
+    padding: 0vw;
+    margin: 1vw;
     
     text-align: center;
     text-decoration: none;
     color: var(--secondary-bg-color);
-
-    
 }
 .fa:hover {
     margin: 0px;
-    padding: 30px;
-    opacity: 0.7;
+    padding: 1vw;
+    opacity: 0.5;
     border-radius: 5px;
     background-color: var(--secondary-bg-color);
     color: var(--primary-bg-color);

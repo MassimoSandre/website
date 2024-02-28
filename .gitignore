@@ -67,3 +67,4 @@ node_modules/
 
 deploy.bat
 old/
+.vscode/
